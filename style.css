@@ -1,0 +1,47 @@
+*
+{
+  margin: 0;
+  padding: 0;
+}
+#head
+{
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding-bottom: 1.5em;
+}
+#head a{
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+h2
+{
+  color: white;
+  padding: 20px;
+}
+#head a:hover
+{
+  color: white;
+}
+.main
+{
+  padding: 2em;
+  padding-bottom: 5em;
+  width: 100%;
+  font-size: 19px;
+}
+#gallery
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#gallery img
+{
+  padding: 1.5em;
+}
+#gallery .filter:hover img
+{
+  transform: scale(1.15);
+}

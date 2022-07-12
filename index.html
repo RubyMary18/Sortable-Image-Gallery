@@ -1,0 +1,86 @@
+<DOCTYPE html>
+  <html>
+    <head>
+      <title>Sortable Image Gallery</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+      <div id="container">
+        <div id="head">
+          <h2>Image Gallery</h2>
+          <a class="main" data-filter="all" href="#">All</a>
+          <a class="main" data-filter="winter" href="#">Winter</a>
+          <a class="main" data-filter="flowers" href="#">Flowers</a>
+          <a class="main" data-filter="sculpture" href="#">Sculptures</a>
+          <a class="main" data-filter="plant" href="#">Plants</a>
+          <a class="main" data-filter="animal" href="#">Animals</a>
+        </div>
+        <div id="gallery">
+          <!--1-->
+          <a href="https://d3qvqlc701gzhm.cloudfront.net/thumbs/421bb8c0b6415cf98ac5b27b13d67e1f0ae1d0a7dc375ff63d72d0cf3e150a80-750.jpg" class="filter all winter"><img src="https://d3qvqlc701gzhm.cloudfront.net/thumbs/421bb8c0b6415cf98ac5b27b13d67e1f0ae1d0a7dc375ff63d72d0cf3e150a80-750.jpg" style="width: 200px; height: 200px"></a>
+          <!--2-->
+          <a href="https://images.pexels.com/photos/376362/pexels-photo-376362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="filter all winter"><img src="https://images.pexels.com/photos/376362/pexels-photo-376362.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 200px; height: 200px"></a>
+          <!--3-->
+           <a href="https://www.ftdimg.com/pics/products/zoom/E2-4305CE_600x600.jpg" class="filter all flowers"><img src="https://www.ftdimg.com/pics/products/zoom/E2-4305CE_600x600.jpg" style="width: 200px; height: 200px"></a>
+          <!--4-->
+           <a href="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="filter all flowers"><img src="https://images.pexels.com/photos/736230/pexels-photo-736230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="width: 200px; height: 200px; object-fit: cover"></a>
+          <!--5-->
+           <a href="https://image.lampsplus.com/is/image/cropped/92784cropped.fpx?qlt=75&wid=274&hei=274&op_sharpen=1&resMode=sharp2&fmt=jpeg" class="filter all sculpture"><img src="https://image.lampsplus.com/is/image/cropped/92784cropped.fpx?qlt=75&wid=274&hei=274&op_sharpen=1&resMode=sharp2&fmt=jpeg" style="width: 200px; height: 200px"></a>
+          <!--6-->
+           <a href="https://i7.fnp.com/images/pr/l/divine-money-plant-terrarium_1.jpg" class="filter all plant"><img src="https://i7.fnp.com/images/pr/l/divine-money-plant-terrarium_1.jpg" style="width: 200px; height: 200px"></a>
+          <!--7-->
+           <a href="https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675.jpg" class="filter all animal"><img src="https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675.jpg" style="width: 200px; height: 200px"></a>
+         <!--8-->
+          <a href="https://www.niabizoo.com/wp-content/uploads/2018/05/ms-animals-habitats-mammals.jpg" class="filter all animal"><img src="https://www.niabizoo.com/wp-content/uploads/2018/05/ms-animals-habitats-mammals.jpg" style="width: 200px; height: 200px"></a>
+          <!--9-->
+          <a href="https://images.pexels.com/photos/774664/pexels-photo-774664.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" class="filter all winter"><img src="https://images.pexels.com/photos/774664/pexels-photo-774664.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" style="width: 200px; height: 200px"></a>
+          <!--10-->
+          <a href="https://www.simplemost.com/wp-content/uploads/2017/08/alisa-anton-177720-750x500.jpg" class="filter all winter"><img src="https://www.simplemost.com/wp-content/uploads/2017/08/alisa-anton-177720-750x500.jpg" style="width: 200px; height: 200px"></a>
+          <!--11-->
+           <a href="https://assets3.thrillist.com/v1/image/2791336/size/tmg-article_default_mobile.jpg" class="filter all winter"><img src="https://assets3.thrillist.com/v1/image/2791336/size/tmg-article_default_mobile.jpg" style="width: 200px; height: 200px"></a>
+         <!--12-->
+          <a href="https://target.scene7.com/is/image/Target/GUEST_fc982b27-ef4f-48a3-bf11-a69d32cc91cc" class="filter all plant"><img src="https://target.scene7.com/is/image/Target/GUEST_fc982b27-ef4f-48a3-bf11-a69d32cc91cc" style="width: 200px; height: 200px"></a>
+         <!--13-->
+          <a href="https://images.homedepot-static.com/productImages/612ae505-9daf-45c3-ac16-67f97dcb251d/svn/globalrose-flower-bouquets-prime-100-red-roses-64_1000.jpg" class="filter all flowers"><img src="https://images.homedepot-static.com/productImages/612ae505-9daf-45c3-ac16-67f97dcb251d/svn/globalrose-flower-bouquets-prime-100-red-roses-64_1000.jpg" style="width: 200px; height: 200px"></a>
+          <!--14-->
+          <a href="https://media-prod.ii.co.uk/s3fs-public/styles/article_thumbnail/public/2019-01/winter%20concept1.jpg" class="filter all winter"><img src="https://media-prod.ii.co.uk/s3fs-public/styles/article_thumbnail/public/2019-01/winter%20concept1.jpg" style="width: 200px; height: 200px"></a>
+          <!--15-->
+          <a href="https://images.pexels.com/photos/4464208/pexels-photo-4464208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="filter all flowers"><img src="https://images.pexels.com/photos/4464208/pexels-photo-4464208.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="width: 200px; height: 200px; object-fit: cover"></a>
+          <!--16-->
+          <a href="http://assets.myntassets.com/assets/images/1952218/2017/6/8/11496900920716-Deco-Aro-Unisex-Artificial-Flowers-and-Plants-2101496900920261-1.jpg" class="filter all plant"><img src="http://assets.myntassets.com/assets/images/1952218/2017/6/8/11496900920716-Deco-Aro-Unisex-Artificial-Flowers-and-Plants-2101496900920261-1.jpg" style="width: 200px; height: 200px"></a>
+         <!--17-->
+          <a href="https://static-01.daraz.pk/original/c321b9d6b3827d70b0b4b7680383c870.jpg_340x340q80.jpg_.webp" class="filter all flowers"><img src="https://static-01.daraz.pk/original/c321b9d6b3827d70b0b4b7680383c870.jpg_340x340q80.jpg_.webp" style="width: 200px; height: 200px"></a>
+          <!--18-->
+          <a href="https://images1.novica.net/pictures/10/p31180_2a_400.jpg" class="filter all sculpture"><img src="https://images1.novica.net/pictures/10/p31180_2a_400.jpg" style="width: 200px; height: 200px"></a>
+          <!--19-->
+          <a href="https://images.pexels.com/photos/1179863/pexels-photo-1179863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="filter all flowers"><img src="https://images.pexels.com/photos/1179863/pexels-photo-1179863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 200px; height: 200px"></a>
+          <!--20-->
+          <a href="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="filter all flowers"><img src="https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 200px; height: 200px"></a>
+          <!--21-->
+           <a href="https://images.pexels.com/photos/2058498/pexels-photo-2058498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="filter all flowers"><img src="https://images.pexels.com/photos/2058498/pexels-photo-2058498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 200px; height: 200px; object-fit: cover"></a>
+        </div>
+      </div>
+    </body>
+  </html>
+
+      <script>
+        $(document).ready(function () {
+          $(".main").click(function () {
+            var value = $(this).attr("data-filter");
+            if (value == "all") {
+              $(".filter").show(1500);
+            } else {
+              $(".filter")
+                .not("." + value)
+                .hide(1500);
+              $(".filter")
+                .filter("." + value)
+                .show(1500);
+            }
+          });
+        });
+      </script>
+    </body>
+  </html>
+</DOCTYPE>
